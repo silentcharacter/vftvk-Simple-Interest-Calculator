@@ -13,8 +13,8 @@ function compute()
 
     let result = years * amount * rate / 100;
 
-    resultDiv.innerHTML = 'If you deposit ' + amount + ',<br/>' + 'at an interest rate of ' + rate + '%.<br/>' +
-        'You will receive an amount of ' + result + ',<br/>' + 'in the year ' + (new Date().getFullYear() + years);
+    resultDiv.innerHTML = 'If you deposit <span>' + amount + '</span>,<br/>' + 'at an interest rate of <span>' + rate + '%</span>.<br/>' +
+        'You will receive an amount of <span>' + result + '</span>,<br/>' + 'in the year <span>' + (new Date().getFullYear() + years) + '</span>';
 }
 
 function onRateChange() {

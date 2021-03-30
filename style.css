@@ -38,3 +38,6 @@ button {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.result span {
+    background-color: yellow;
+}
