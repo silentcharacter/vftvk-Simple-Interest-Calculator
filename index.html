@@ -1,16 +1,61 @@
-<html>
-    <head>
-    <script src="script.js"></script>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Simple Interest Calculator</title>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+</head>
+<body>
+        <div class="wrapper">
+            <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            <div class="form">
+                <table>
+                    <tr>
+                        <td>
+                            Amount
+                        </td>
+                        <td>
+                            <input type="number" id="principal">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Interest Rate
+                        </td>
+                        <td>
+                            <input type="range" id="rate" min="0" max="25" value="10.5" step="0.1" onchange="onRateChange()">
+                            <span id="rateValue">10.50%</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            No. of Years
+                        </td>
+                        <td>
+                            <select name="years" id="years">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <button onclick="compute()">Compute Interest</button>
+                <div id="result" class="result">
 
-        <button onclick="compute()">Compute</button>
-    </body>
+                </div>
+            </div>
+
+            <div>
+                &copy; Everyone Can Get Rich
+            </div>
+
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
 </html>

@@ -1,4 +1,40 @@
-body {background-color:tan;}
-h1{color:green;}
+html * {
+    font-family: Verdana;
+}
 
+h1 {
+    color: gray;
+}
 
+html {
+    background-color: black;
+}
+
+body {
+    margin: 10px 50px 10px 50px;
+}
+
+.wrapper {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+.form {
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+td {
+    height: 28px;
+    padding-right: 20px;
+}
+
+button {
+    margin-top: 5px;
+}
+
+.result {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
