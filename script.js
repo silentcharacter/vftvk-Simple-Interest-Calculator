@@ -5,6 +5,12 @@ function compute()
     let years = Number(document.getElementById("years").value);
     let resultDiv = document.getElementById("result");
 
+    if (!amount || amount <= 0) {
+        alert('Please enter a positive number')
+        document.getElementById("principal").focus();
+        return
+    }
+
     let result = years * amount * rate / 100;
 
     resultDiv.innerHTML = 'If you deposit ' + amount + ',<br/>' + 'at an interest rate of ' + rate + '%.<br/>' +
